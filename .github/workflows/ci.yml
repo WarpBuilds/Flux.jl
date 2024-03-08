@@ -63,7 +63,7 @@ jobs:
 
   docs:
     name: Documentation
-    runs-on: ec2-2x
+    runs-on: ec2-16x
     steps:
       - uses: actions/checkout@v4.1.1
       - uses: julia-actions/setup-julia@v1
