@@ -63,6 +63,9 @@ jobs:
 
   docs:
     name: Documentation
+    strategy:
+      matrix:
+        runner_type: ["ubuntu-latest","warp-ubuntu-latest-x64-2x","warpdev-ubuntu-latest-x64-2x","warpdev-ubuntu-latest-x64-4x"]
     runs-on: gcp-4x
     steps:
       - uses: actions/checkout@v4.1.1
