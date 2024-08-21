@@ -19,7 +19,7 @@ jobs:
         version:
           # - '1.9' # Uncomment when 1.10 is out. Replace this with the minimum Julia version that your package supports. 
           - '1'
-        os: [ubuntu-latest]
+        os: [warp-ubuntu-2404-x64-2x]
         arch: [x64]
         include:
           - os: windows-latest
