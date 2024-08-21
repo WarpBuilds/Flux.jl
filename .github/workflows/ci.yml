@@ -61,13 +61,13 @@ jobs:
         if: contains(fromJson('["1", "1.9"]'), matrix.version) && matrix.os == 'ubuntu-latest'
         with:
           file: lcov.info
-      - name: Create snapshot
-        if: github.event_name == 'push'
-        uses: WarpBuilds/snapshot-save@feat/snp-rnr-action
-        with:
-          warpbuild-base-url: "https://api.dev.warpbuild.dev/api/v1"
-          wait-timeout-minutes: 30
-          alias: "wb-flux-snp-1"
+      # - name: Create snapshot
+      #   if: github.event_name == 'push'
+      #   uses: WarpBuilds/snapshot-save@feat/snp-rnr-action
+      #   with:
+      #     warpbuild-base-url: "https://api.dev.warpbuild.dev/api/v1"
+      #     wait-timeout-minutes: 30
+      #     alias: "wb-flux-snp-1"
 
   docs:
     name: Documentation
